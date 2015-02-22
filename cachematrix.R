@@ -6,10 +6,10 @@
 ## cache the inverse of a matrix.
 ## 
 ## Usage:
-##      Where is "mymatrix" is a "square" matrix...
-##      ------------------------------------------
+##      Where "mymatrix" is a "square" invertible matrix...
+##      ---------------------------------------------------
 ##      mycache <- makeCacheMatrix(mymatrix) ### factory creates the function
-##      myinversion <- cacheSolve(mycache)   ### solves matrix or returns cache
+##      myinversion <- cacheSolve(mycache)   ### solves matrix/returns cache
 ##                                                
 
 ## ----------------------------------------------------------------------------
@@ -71,11 +71,11 @@ makeCacheMatrix <- function(x = matrix()) {
 ##
 ##          If the inversion is not cached, it computes it using solve(), saves
 ##          the result in the makeCacheMatrix function instance using 
-##          setInversion() and return the inverted matrix.
+##          setInversion() and returns the inverted matrix.
 ##
 ## Input:
 ##      x is the function list instance returned by calling 
-##      makeCacheMatrix() with a matrix you can't to solve/cache.
+##      makeCacheMatrix() with a matrix you want to solve.
 ##
 ##      Note:  Pass-through of other parameters to solve() is enabled 
 ##             using "..." 
